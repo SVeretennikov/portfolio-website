@@ -15,23 +15,23 @@
                 <div class="container">
                     <nav>
                         <ul class="header__menu">
-                            <li>
-                                <a href="#">Home</a>
+                            <li class="header__home header__item active">
+                                <p>Home</p>
                             </li>
-                            <li>
-                                <a href="#">Skills</a>
+                            <li class="header__skills header__item">
+                                <p>Skills</p>
                             </li>
-                            <li>
-                                <a href="#">Projects</a>
+                            <li class="header__projects header__item">
+                                <p>Projects</p>
                             </li>
-                            <li>
-                                <a href="#">Contact</a>
+                            <li class="header__contact header__item">
+                                <p>Contact</p>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <main class="main">
+            <main class="main" id="home">
                 <div class="container">
                     <h1>Serhii Veretennikov</h1>
                     <h3>Front-End Developer</h3>
@@ -51,7 +51,7 @@
                     </article>
                 </div>
             </main>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="container">
                     <h2>Skills</h2>
                     <ul class="skills__list">
@@ -82,7 +82,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <div class="container">
                     <h2>Projects</h2>
                     <ul class="projects__list">
@@ -95,7 +95,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <h2>Contact</h2>
                     <ul class="contact__options">
@@ -112,5 +112,6 @@
                 </div>
             </section>
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>

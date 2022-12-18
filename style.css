@@ -22,6 +22,7 @@ body {
 }
 
 h2 {
+    padding-top: 60px;
     font-size: 40px;
     text-align: center;
 }
@@ -42,30 +43,34 @@ h2 {
 .header__menu {
     display: flex;
     font-size: 24px;
-    max-width: 25rem;
+    max-width: 30rem;
     margin: 0 auto;
     justify-content: space-between;
 }
 
-.header__menu li {
-    padding: 0;
+.header__item {
+    padding: 0 5px 10px;
     border-bottom: 3px solid #525e65;
+    cursor: pointer;
 }
 
-.header__menu li a {
-    margin: 5px 10px 10px;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.header__menu li:hover {
+.header__item:hover {
     transition: 300ms;
     border-bottom: 3px solid #73cca8;
 }
 
-.header__menu li:hover a{
+.header__item p{
+    transition: 300ms;
+}
+
+.header__item:hover p{
     color: #73cca8;
+    transition: 300ms;
+}
+
+.active {
+    color: #73cca8;
+    border-bottom: 3px solid #73cca8;
 }
 
 .main {
@@ -224,6 +229,7 @@ h2 {
     }
 
     .header__menu {
+        max-width: 24rem;
         font-size: 20px;
     }
 }
