@@ -93,6 +93,8 @@ h2 {
 .main__image {
     max-width: 150px;
     max-height: 150px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -232,6 +234,24 @@ h2 {
         max-width: 24rem;
         font-size: 20px;
     }
+
+    .header__item:not(.active) {
+        border-bottom: 3px solid #525e65;
+    }
+
+    .header__item:not(.active) p{
+        color: #d6e3d0;
+        transition: 300ms;
+    }
+
+    .active {
+        color: #73cca8;
+        border-bottom: 3px solid #73cca8;
+    }
+
+    .projects__list {
+        margin: 50px auto 300px;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -278,6 +298,8 @@ h2 {
     .main__image {
         max-width: 180px;
         max-height: 180px;
+        width: 100%;
+        height: 100%;    
     }
 
     .skills__list{
